@@ -28,9 +28,6 @@ jobs:
 
       - name: Convert PDF to PNG
         run: pdftoppm -png -singlefile resume.pdf resume_preview
-      
-      - name: Rename output file
-        run: mv resume_preview.png resume_preview.png
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
