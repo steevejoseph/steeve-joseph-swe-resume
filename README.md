@@ -23,4 +23,4 @@ docker run --rm -i -v "$PWD":/data latex pdflatex resume.tex
 
 ### License
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT but all the data is owned by Steeve Joseph.
