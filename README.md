@@ -19,7 +19,7 @@ docker run --rm -i -v "$PWD":/data latex pdflatex steeve_joseph_resume.tex
 
 ### Preview
 
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot](/steeve_joseph_resume_preview.png)
 
 ### License
 
