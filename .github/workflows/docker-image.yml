@@ -21,15 +21,15 @@ jobs:
           options: -v ${{ github.workspace }}:/data
           run: |
             cd data
-            pdflatex resume.tex
+            pdflatex steeve_joseph_resume.tex
 
       - name: Install Poppler Utils
         run: sudo apt-get install -y poppler-utils
 
       - name: Convert PDF to PNG
-        run: pdftoppm -png -singlefile resume.pdf resume_preview
+        run: pdftoppm -png -singlefile steeve_joseph_resume.pdf steeve_joseph_resume_preview
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update resume PDF and preview image
-          file_pattern: 'resume.pdf resume_preview.png'
+          file_pattern: 'steeve_joseph_resume.pdf steeve_joseph_resume_preview.png'
