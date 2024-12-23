@@ -1,0 +1,317 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\hypersetup{hidelinks}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\centerline{\textbf{\huge Steeve Joseph}}
+\\
+\centerline{\footnotesize
+\href{https://www.linkedin.com/in/steevejoseph/}{linkedin.com/in/steevejoseph/} $|$
+\href{tel:+13217465672}{321-746-5672} $|$
+\href{https://steevejoseph.github.io/}{steevejoseph.github.io} $|$
+\href{mailto:thesteevejoseph@gmail.com}{thesteevejoseph@gmail.com} $|$
+\href{https://github.com/steevejoseph/}{github.com/steevejoseph}
+}
+\end{tabular*}
+
+
+
+% \end{tabular*}
+
+% %----------HEADING old-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://steevejoseph.github.io/}{\Large Steeve Joseph}} & Email : \href{mailto:thesteevejoseph@gmail.com}{thesteevejoseph@gmail.com}\\
+%   \href{https://steevejoseph.github.io/}{https://steevejoseph.github.io/} & Mobile : +1-321-746-5672 \\
+% \end{tabular*}
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{\textbf{Languages}{: Java/C\#, Typescript,  Python, C, Go, Rust}}
+    \vspace{-4.4pt}    
+   \item{\textbf{Technologies}{: Azure DevOps, MongoDB, Firebase, Docker, Vercel, Reactjs/Nextjs, ASP.NET, Node.js, TailwindCSS}}
+    \vspace{-4.4pt}    
+
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineer, Azure Cloud \& AI}{05/2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Ev2 Auto Bootstrap}{Using C\#/ASP.NET to build REST API that enables one-click production CI/CD pipeline generation in Azure DevOps, facilitating secure planet-scale deployment to Azure cloud via Ev2.}
+        
+        % \resumeItem{Download Geneva Account}{Built APIs using C\#/ASP.NET that bundles all configurations from Geneva Logs, Geneva Monitoring, and Geneva Dashboard accounts and maps them to a user's Metrics account.}
+        
+        \resumeItem{Azure DevOps Re-sync}{Built API in C\# allowing engineers to re-sync their source controlled Geneva Monitoring accounts to Azure Devops, reducing Geneva Portal support burden  by \textbf{30\%}.}
+
+        \resumeItem{Metrics Landing Pages}{
+        Used C\# and Reactjs to develop API and UI that allowed users to manage Geneva Account metrics and monitors, leading to a \textbf{50\% reduction} in time to manage production service configurations across multiple accounts.}
+
+
+        \resumeItem{Geneva Portal Migration}{Used ReactJS to implement parity features  between Geneva Portal and Classic Jarvis Portal, leading to KPIs of \textbf{migrating 50\%} of systems from Xpert to Geneva and \textbf{100\% adoption} of Geneva Portal for \textbf{40K} customers.    
+        % including: link translation, Switch Account, Support Menu, short link support, and resolving blocking issues that would result in Sev 2-4 IcM incidents. 
+        }
+        
+       \resumeItem{In App Feedback}{Used ReactJS and C\# to develop implements in app feedback system, UX for proactive feedback prompts to track portal NSAT (overall satisfaction), and to achieve NSAT score of \textbf{185/200}.
+        }
+
+       \resumeItem{Mectrics Experiences UX}{Collaborated with cross-functional teams such as design, Metrics backend, and non-technical stakeholders to deliver embedded metrics experiences UX in ReactJS
+       }
+
+        % \resumeItem{Health Source Control}{
+        % Used C\# \& React to build API \& UX for account level source control for Geneva Health Monitors in the Geneva Portal, helping lead to KPI of reducing source control support volume by 30\%.
+        % }
+
+        %   \resumeItem{RC Nav Source Control}{
+        % Used ReactJS to implement account level source control features in resource centric navigation (RCNav) in the Geneva Portal leading to KPI of reducing support volume by 30\%.
+        % }
+
+        % \resumeItem{Dashboard Color Scheme}{Used KnockoutJS and C\# to add a feature that allows DRIs to customize their dashboard during an on-call rotation.}
+        
+        % \resumeItem{[Internship 2019] Virtual Dashboards}{Developed synchronized collaborative dashboarding service in Azure to be used by 20K+ engineers, using C\#/ASP.NET and KnockoutJS.}
+      \resumeItemListEnd
+
+
+      
+     % \resumeSubheading
+     %      {University of Central Florida}{Orlando, FL}
+     %      {CS Mentor}{August 2019 - December 2020}
+     %      \resumeItemListStart
+     
+     %        % \resumeItem{}{Collaborated with UCF career services to improve processes in CS recruiting.}
+     %        \resumeItem{}{Provided guidance about curriculum and career paths to undergraduate students.} 
+            
+     %        \resumeItem{}{Tutored at-risk students in Data Structures \& Algorithms, Object Oriented Programming, and Full-Stack Development.}
+            
+     %      \resumeItemListEnd
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineering Intern, Azure Cloud \& AI}{05/2019 - 08/2019}
+      \resumeItemListStart
+                % \resumeItem{}{Began re-architecture of internal Azure Portal to React w/ Redux, using Microsoft's Fluent Design System.}
+        % \resumeItem{}{Developing system for collaborative monitoring of Azure services from multiple accounts.}
+        \resumeItem{Virtual Dashboards}{Built real-time collaborative dashboard service for 20K+ engineers using C\#/ASP.NET and KnockoutJS, reducing quarterly costs by \$2M.}
+        % \resumeItem{}{Used Typescript and C\# to analyze and visualize terabytes of time-series data and give customers\\ refined control over key metrics, data granularity, and data persistence.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+     {Brawns}{Orlando, FL}
+      {Full-Stack Software Engineer}{08/2018 - 05/2019}
+      \resumeItemListStart
+        \resumeItem{Bazaar}
+        {Led engineering team of 9 in developing MERN stack SaaS web and mobile app for universities of up to 65K students.
+        }
+        % \resumeItem{Bazaar Mobile}
+        % {Built Android app for Bazaar using React Native, leading development team of 4. }
+
+
+        % \href{https://github.com/steevejoseph/bazaar-mobile}{https://github.com/steevejoseph/bazaar-mobile}
+        
+        % \resumeSubItem{Coma}
+        % {Led team of 9 in developing contact management web app capable of supporting 250 users. Built API using Nodejs and MongoDB, UI using Vuejs.}
+    %     
+        
+    %   \resumeSubItem{Bazaar}\hfill \href{https://github.com/steevejoseph/bazaar-frontend}{ https://github.com/steevejoseph/bazaar-frontend}
+       
+    %     Led team of 6 in development of marketplace web app. Voted \#1 out of 15 projects presented for Best Web Application. Built with MongoDB, ExpressJS, ReactJS, NodeJS, jsonwebtoken, and \{ Imgur, Chatkit\} APIs. 
+
+   
+
+        
+        % \resumeItem{}
+        % {Led regular refactors of 3500+ line projects.}
+        % \resumeItem{}
+        % {Put in place Agile practices such as standups, regular refactoring, pair programming,\\ test driven development, and continuous integration/deployment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Leidos}{Orlando, FL}
+      {Software Engineering Intern, R \& D}{05/2018 - 05/2019}
+      \resumeItemListStart
+        \resumeItem{AFATDS}{Developed mode transitioning system for US Army's AFATDS simulation using Angular 4 and Java w/ Spring Boot.}
+        % \resumeItem{Portable Clouds}{Helped implement virtualization architecture centered around AWS and Docker.}
+        % \resumeItem{ONESAF}{Supported US military's OneSAF Java simulation.}
+       % \resumeItem{VDI Setup}{Wrote bash and python scripts in order to reduce internal tooling backup/restore time from 2 hours to 13 minutes.}
+       % \resumeItem{Ping Pong}{Wrote Python scripts to autonomously detect/react to remote processes and broadcasts.}
+       
+    %      % \resumeItem{}
+    %     % {Building containerized distributed virtualization architecture capable of supporting 1000+ users.}
+      \resumeItemListEnd
+
+    %    \resumeSubheading
+    % {DiSTI Corporation}{Orlando, FL}
+    % {Software Engineering Intern}{Sep. 2017 - Apr. 2018}
+    %    \resumeItemListStart
+    %      \resumeItem{C-RAM}{Used C\# and Unity engine to develop US military simulation supporting up to 8 simultaneous users.}
+
+     % \resumeItemListEnd
+    % \resumeSubheading
+    %   {University of Central Florida}{Orlando, FL}
+    %   {Conference Ambassador}{May 2017 - Aug. 2017}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %     {Arranged housing for 2500+ guests.} 
+        
+    %     \resumeItem{}
+    %     {Resolved conflicts and clarified mis-communication between associates, guests, management.}
+        
+    %     \resumeItem{}
+    %     {Led teams of 3-5 during checkins, checkouts, and meetings.}
+        
+    %     \resumeItem{}
+    % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Orlando, FL}
+      {Bachelor of Science in Computer Science}{08/2016 - 05/2020}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    % \resumeSubItem{Hands for All Orphan Match}{Creating a platform where donors and sponsors can connect with orphans based on location and communicate via video chat with real-time translation. Built with ReactJS and Firebase for matching, WebRTC for video communication, and a Golang backend utilizing Azure Speech Services for audio translation and connection management.
+    %     % \href{https://handsforall.org/orphan-care}{https://handsforall.org/orphan-care}
+
+    % % and periodically allows check ins via a penpal system.
+    % }
+    \resumeSubItem{AI Industry Translator}
+      {Developing a B2B SaaS for due diligence on external industry partners. Flask/Python back-end using MongoDB, OpenAI, \& Stripe for payments. ReactJS/Typescript front-end, React Native mobile app, and Docker for serverless cloud deployments.}
+
+    \resumeSubItem{Foundation of Lights Webapp}
+      {Used NextJS and Paypal to create a web application for a community organization that processes \textbf{\$10K+/mo} in donations and supports \textbf{200+} unique users. Leveraged SSR to reduce monthly spend by \textbf{36x}, net a \textbf{5.3x} speed increase, and consume \textbf{20.75x} less data.
+    % 36/mo to free
+    % 400ms -> 75ms
+    % 166kb -> 8kb
+    }
+
+    % \resumeItem{Shmood}  
+    % {Used MERN stack and Azure Face API to build web app that uses deep learning to analyze user photos and create mood-matching Spotify playlists.}
+
+    % \resumeSubItem{Multilingual Video Chat}\hfill
+    % \href{https://github.com/joshuasylvestre/iungo}{https://github.com/joshuasylvestre/iungo}
+    
+    % {Dockerized video chat application that translates real-time between speakers. Using MERN stack, WebRTC, Socket.io, and Yandex.}
+
+    % \resumeSubItem{Deep Learning Image Generator}\hfill \href{https://github.com/steevejoseph/ddig}{https://github.com/steevejoseph/ddig}
+    
+    % {Used Python/Flask, Tensorflow and Reactjs, and Docker to create web app that generates images simulating the hallucinatory effects of LSD.}
+  \resumeSubHeadingListEnd
+
+% -----------------------
+
+
+% %-----------Leadership-----------------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    % \resumeSubItem{Hackathons:}{sudo hackStetson 2017/2018, OTAB Smart City Initiative, KnightHacks 2017/2018}
+     % \resumeSubItem{Organizations:} %}{Latin Rhythm UCF  Robotics Club, Orlando Golang User Group, UCF Programming Team practice, National Society of Black Engineers, Society of Hispanic Professional Engineers
+    % {Salsa Heat Training Team Fall 2021 (Captain), Winter Park Toastmasters  (Director of Membership 2021), Orlando Boxing Club (trainer 2022-2023) %Second Harvest Food Bank, Orlando Union Rescue Mission, SAK Comedy Lab, Truthful Acting Studios
+    % } 
+    \resumeSubItem{Technical Mentorship}{Currently mentoring multiple junior software engineers, previously mentored mid-level engineers from undergrad until new grad}
+
+    % \resumeSubItem{Winter Park Toastmasters}{Director of Membership 2021, Mentor Coordinator}
+
+    \resumeSubItem{Computer Science  Tutor}{Tutored at-risk students in Data Structures \& Algorithms, Object Oriented Programming, and Full-Stack Development @ UCF}
+
+    
+    
+    % {Previously mentored 10 CS students build skills to get their first software developer internship (5/10 currently SWE), currently mentoring 2 CS undergrads, 2 new grad software engineers, and 1 PHD student}
+    
+    % \resumeSubItem{Hobbies:}{Salsa Heat performance team (Captain Fall 2021-Spring 2022) Winter Park Toastmasters (Director of Membership 2021), boxing 
+    
+    % % Photography, golf, standup comedy, improv comedy, boxing, acting
+    
+    
+    % }
+  \resumeSubHeadingListEnd
+% %------------------------------------------
+\end{document}
