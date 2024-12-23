@@ -8,11 +8,12 @@ on:
 
 jobs:
   compile:
-    name: Compile resume pdf
+    name: Compile resume pdf and preview
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+      
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
@@ -21,6 +22,17 @@ jobs:
           run: |
             cd data
             pdflatex resume.tex
+
+      - name: Install Poppler Utils
+        run: sudo apt-get install -y poppler-utils
+
+      - name: Convert PDF to PNG
+        run: pdftoppm -png -singlefile resume.pdf resume_preview
+      
+      - name: Rename output file
+        run: mv resume_preview.png resume_preview.png
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply pdflatex changes
+          commit_message: Update resume PDF and preview image
+          file_pattern: 'resume.pdf resume_preview.png'
