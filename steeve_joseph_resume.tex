@@ -102,7 +102,7 @@
  \resumeSubHeadingListStart
    \item{\textbf{Languages}{: Java/C\#, Typescript,  Python, C, Go, Rust}}
     \vspace{-4.4pt}    
-   \item{\textbf{Technologies}{: Azure DevOps, MongoDB, Firebase, Docker, Vercel, Reactjs/Nextjs, ASP.NET, Node.js, TailwindCSS}}
+   \item{\textbf{Technologies}{: Azure DevOps, MongoDB, Firebase, Docker, Terraform, Vercel, Reactjs/Nextjs, ASP.NET, Node.js, TailwindCSS, Git/Github, Flask, FastAPI}}
     \vspace{-4.4pt}    
 
  \resumeSubHeadingListEnd
@@ -120,17 +120,20 @@
         
         % \resumeItem{Download Geneva Account}{Built APIs using C\#/ASP.NET that bundles all configurations from Geneva Logs, Geneva Monitoring, and Geneva Dashboard accounts and maps them to a user's Metrics account.}
         
-        \resumeItem{Azure DevOps Re-sync}{Built API in C\# allowing engineers to re-sync their source controlled Geneva Monitoring accounts to Azure Devops, reducing Geneva Portal support burden  by \textbf{30\%}.}
+        % \resumeItem{Azure DevOps Re-sync}{Built API in C\# allowing engineers to re-sync their source controlled Geneva Monitoring accounts to Azure Devops, reducing Geneva Portal support burden  by \textbf{30\%}.}
 
-        \resumeItem{Metrics Landing Pages}{
-        Used C\# and Reactjs to develop API and UI that allowed users to manage Geneva Account metrics and monitors, leading to a \textbf{50\% reduction} in time to manage production service configurations across multiple accounts.}
+        % \resumeItem{Metrics Landing Pages}{
+        % Used C\# and Reactjs to develop API and UI that allowed users to manage Geneva Account metrics and monitors, leading to a \textbf{50\% reduction} in time to manage production service configurations across multiple accounts.}
+
+        \resumeItem{Dev Build Optimizer}{Used Rust, Go, SWC, and Vite to evaluate options for optimizing/speeding up dev  and production builds for ReactJS apps.
+        }
 
 
         \resumeItem{Geneva Portal Migration}{Used ReactJS to implement parity features  between Geneva Portal and Classic Jarvis Portal, leading to KPIs of \textbf{migrating 50\%} of systems from Xpert to Geneva and \textbf{100\% adoption} of Geneva Portal for \textbf{40K} customers.    
         % including: link translation, Switch Account, Support Menu, short link support, and resolving blocking issues that would result in Sev 2-4 IcM incidents. 
         }
         
-       \resumeItem{In App Feedback}{Used ReactJS and C\# to develop implements in app feedback system, UX for proactive feedback prompts to track portal NSAT (overall satisfaction), and to achieve NSAT score of \textbf{185/200}.
+       \resumeItem{In-App Feedback}{Used ReactJS and C\# to implement in-app feedback system, UX for proactive feedback prompts to track portal NSAT (overall satisfaction), and to achieve NSAT score of \textbf{185/200}.
         }
 
        \resumeItem{Mectrics Experiences UX}{Collaborated with cross-functional teams such as design, Metrics backend, and non-technical stakeholders to deliver embedded metrics experiences UX in ReactJS
@@ -174,13 +177,13 @@
         % \resumeItem{}{Used Typescript and C\# to analyze and visualize terabytes of time-series data and give customers\\ refined control over key metrics, data granularity, and data persistence.}
       % \resumeItemListEnd
 
-    \resumeSubheading
-     {Brawns}{Orlando, FL}
-      {Full-Stack Software Engineer}{08/2018 - 05/2019}
-      \resumeItemListStart
-        \resumeItem{Bazaar}
-        {Led engineering team of 9 in developing MERN stack SaaS web and mobile app for universities of up to \textbf{65K students}.
-        }
+    % \resumeSubheading
+    %  {Brawns}{Orlando, FL}
+    %   {Full-Stack Software Engineer}{08/2018 - 05/2019}
+    %   \resumeItemListStart
+    %     \resumeItem{Bazaar}
+    %     {Led engineering team of 9 in developing MERN stack SaaS web and mobile app for universities of up to \textbf{65K students}.
+    %     }
         % \resumeItem{Bazaar Mobile}
         % {Built Android app for Bazaar using React Native, leading development team of 4. }
 
@@ -202,13 +205,13 @@
         % {Led regular refactors of 3500+ line projects.}
         % \resumeItem{}
         % {Put in place Agile practices such as standups, regular refactoring, pair programming,\\ test driven development, and continuous integration/deployment.}
-      \resumeItemListEnd
+      % \resumeItemListEnd
 
     \resumeSubheading
       {Leidos}{Orlando, FL}
       {Software Engineering Intern, R \& D}{05/2018 - 05/2019}
       \resumeItemListStart
-        \resumeItem{AFATDS}{Developed mode transitioning system for US Army's AFATDS simulation using Angular 4 and Java w/ Spring Boot.}
+        \resumeItem{AFATDS}{[Secret Clearance] Developed mode transitioning system for US Army's AFATDS simulation using Angular 4 and Java w/ Spring Boot.}
         % \resumeItem{Portable Clouds}{Helped implement virtualization architecture centered around AWS and Docker.}
         % \resumeItem{ONESAF}{Supported US military's OneSAF Java simulation.}
        % \resumeItem{VDI Setup}{Wrote bash and python scripts in order to reduce internal tooling backup/restore time from 2 hours to 13 minutes.}
@@ -265,27 +268,38 @@
 
     % % and periodically allows check ins via a penpal system.
     % }
-    \resumeSubItem{AI Industry Translator}
-      {Developing a B2B SaaS for due diligence on external industry partners. Flask/Python back-end using MongoDB, OpenAI, \& Stripe for payments. ReactJS/Typescript front-end, React Native mobile app, and Docker for serverless cloud deployments.}
-
-    \resumeSubItem{Foundation of Lights Webapp}
-      {Used NextJS and Paypal to create a web application for a community organization that processes \textbf{\$10K+/mo} in donations and supports \textbf{200+} unique users. Leveraged SSR to reduce monthly spend by \textbf{36x}, net a \textbf{5.3x} speed increase, and consume \textbf{20.75x} less data.
-    % 36/mo to free
-    % 400ms -> 75ms
-    % 166kb -> 8kb
+    \resumeSubItem{Retrieval Augmented Generation Docs Chat}
+    {Built a production-level RAG application that allows dev teams to chat with their specific docs or for students to chat with their specific textbooks. Used Fastapi (Python), Azure OpenAI Embeddings, GPT Turbo 3.5, ChromaDB, and Terraform for one-click infrastructure deployment to Microsoft Azure.
     }
 
-    % \resumeItem{Shmood}  
-    % {Used MERN stack and Azure Face API to build web app that uses deep learning to analyze user photos and create mood-matching Spotify playlists.}
+    \resumeSubItem{Desktop GPT}{Developed a cross-platform desktop application that allows users to search ChatGPT directly from their desktop. Built using Golang, React, TypeScript, and the OpenAI API.} 
+
+    
+    \resumeSubItem{AI Industry Translator}
+      {Developed a B2B SaaS for due diligence on external industry partners. Flask/Python back-end using MongoDB, OpenAI, \& Stripe for payments. ReactJS/Typescript front-end, React Native mobile app, and Docker for serverless AWS deployments.}
+
+    % \resumeSubItem{Foundation of Lights Webapp}
+    %   {Used NextJS and Paypal to create a web application for a community organization that processes \textbf{\$10K+/mo} in donations and supports \textbf{200+} unique users. Leveraged SSR to reduce monthly spend by \textbf{36x}, net a \textbf{5.3x} speed increase, and consume \textbf{20.75x} less data.
+    % % 36/mo to free
+    % % 400ms -> 75ms
+    % % 166kb -> 8kb
+    % }
+
+    \resumeSubItem{Location Based Marketplace SaaS}
+    {Led engineering team of 9 in developing MERN stack SaaS web and mobile app for universities of up to \textbf{65K students}.
+    }
+
+    \resumeItem{Machine Learning Playlist Creator}  
+    {Used MERN stack and Azure Face API to build web app that uses deep learning to analyze user photos and create mood-matching Spotify playlists.}
 
     % \resumeSubItem{Multilingual Video Chat}\hfill
     % \href{https://github.com/joshuasylvestre/iungo}{https://github.com/joshuasylvestre/iungo}
     
     % {Dockerized video chat application that translates real-time between speakers. Using MERN stack, WebRTC, Socket.io, and Yandex.}
 
-    % \resumeSubItem{Deep Learning Image Generator}\hfill \href{https://github.com/steevejoseph/ddig}{https://github.com/steevejoseph/ddig}
-    
-    % {Used Python/Flask, Tensorflow and Reactjs, and Docker to create web app that generates images simulating the hallucinatory effects of LSD.}
+    \resumeSubItem{Deep Learning Image Generator}
+    % \hfill \href{https://github.com/steevejoseph/ddig}{https://github.com/steevejoseph/ddig}
+    {Used Python/Flask, Tensorflow and Reactjs, Google's Deep Dream CNN and Docker to create web app that generates images simulating the hallucinatory effects of LSD.}
   \resumeSubHeadingListEnd
 
 % -----------------------
@@ -298,11 +312,12 @@
      % \resumeSubItem{Organizations:} %}{Latin Rhythm UCF  Robotics Club, Orlando Golang User Group, UCF Programming Team practice, National Society of Black Engineers, Society of Hispanic Professional Engineers
     % {Salsa Heat Training Team Fall 2021 (Captain), Winter Park Toastmasters  (Director of Membership 2021), Orlando Boxing Club (trainer 2022-2023) %Second Harvest Food Bank, Orlando Union Rescue Mission, SAK Comedy Lab, Truthful Acting Studios
     % } 
-    \resumeSubItem{Technical Mentorship}{Currently mentoring multiple junior software engineers, previously mentored mid-level engineers from undergrad until new grad}
+    \resumeSubItem{Technical Mentorship}{Currently mentoring multiple junior software engineers, previously mentored mid-level engineers from undergrad until new grad.}
+
 
     % \resumeSubItem{Winter Park Toastmasters}{Director of Membership 2021, Mentor Coordinator}
 
-    \resumeSubItem{Computer Science  Tutor}{Tutored at-risk students in Data Structures \& Algorithms, Object Oriented Programming, and Full-Stack Development @ UCF}
+    \resumeSubItem{Computer Science  Tutor}{Tutored at-risk students in Data Structures \& Algorithms, Object Oriented Programming, and Full-Stack Development @ UCF.}
 
     
     
